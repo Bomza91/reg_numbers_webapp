@@ -9,13 +9,16 @@ module.exports = function regFactory(pool) {
 
     const num = y.substring(0, 2)
 
-    var check = await checkingReg(y);
+    var b = await pool.query(`select id from towns where registration = $1`, [num]);
+    const id = b.rows[0].id
+
+
+    if(id > 1){
+      var check = await checkingReg(y);
+
+    }
 
     if (check === 0) {
-      var b = await pool.query(`select id from towns where registration = $1`, [num]);
-      // console.log(b.rows[0].id);
-      const id = b.rows[0].id
-
       var z = await pool.query("insert into regNumbers(reg, townsId) values($1,$2)", [y, id])
       return z.rows;
     }
