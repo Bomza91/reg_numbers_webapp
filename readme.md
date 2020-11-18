@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/Bomza91/registration_numbers_webapp.svg?branch=main)](https://travis-ci.org/Bomza91/registration_numbers_webapp)
+[![Build Status](https://travis-ci.com/Bomza91/reg_numbers_webapp.svg?branch=master)](https://travis-ci.com/Bomza91/reg_numbers_webapp)
