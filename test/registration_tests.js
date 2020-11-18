@@ -54,20 +54,6 @@ describe('Stored registrarion numbers', function () {
   });
 });
 
-// describe('Filter by Town function', function () {
-//   beforeEach(async function () {
-//     await pool.query('DELETE FROM regNumbers');
-//   });
-
-//   it("Should be able to filter registration for each town", async function () {
-//     let regInstance = regFactory(pool);
-//       await regInstance.checkingReg('CK 852-234');
-//     await regInstance.checkingReg('CK 654-235');
-//     await regInstance.checkingReg('CA 123-123');
-//     let filterbyTown = await regInstance.showFilter('CA');
-//     assert.deepEqual(filterbyTown, [{'reg':'CA 122-123', 'towns':1}]);
-//   });
-// });
 
 
 
