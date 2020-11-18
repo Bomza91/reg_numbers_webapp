@@ -1,0 +1,74 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	background-image: url("../images/regN.jpg");
+	background-color: #cccccc;
+	background-size: cover;
+  }
+
+.container {
+	width: 90%;                   
+	margin:	auto;
+	
+}
+
+.regNumberEntered {
+	padding: 1em;
+	border-radius: 0.5em;
+	font-size: 1em;
+}
+
+.info {
+	color: rgb(255, 0, 0);
+	font-size: 20px;
+	
+	}
+
+.btn {
+	margin: 1em;
+	padding: 1em;
+	font-size: 1em;
+	border-radius: 0.25em;
+}
+
+.button{
+	background-color: rgb(125, 146, 29);
+	font-size: 1em;
+	border-radius: 0.25em;
+
+}
+
+.blue {
+	background-color: rgb(125, 146, 29);
+	font-size: 1em;
+	border-radius: 0.25em;
+	
+}
+
+.message {
+	height: 1em;
+	font-weight: bold;
+	color: crimson;
+}
+
+.reg{
+	background-color: yellow;
+	border: 0.1em solid;
+	border-radius: 0.2em;
+	padding: 0.5em;
+	margin: 0.5em;
+	width: 7em;
+	text-align: center;
+	font-weight: bold;
+	float: left;
+
+}
+
+input[type='radio'] {
+	margin: 1em;
+}
+
+.correct{
+	color: green;
+}
+

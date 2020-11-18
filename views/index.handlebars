@@ -1,0 +1,77 @@
+<div class="container">
+
+	<h1>Registration numbers</h1>
+
+	<div class="message"></div>
+	<div class="numbers"></div>
+
+	<div class="info">
+		{{#if messages.info}}
+		{{messages.info}}
+		{{/if}}
+	</div>
+	 <div class="resetSuccessfully"></div>
+
+
+    <div class="clear">
+       </p>{{messages.resetSuccessfully}}</p>
+    </div>
+
+<br />
+
+<div class="textBox">
+ <p><b>This is the acceptable format of registration: CJ 142-258 CK 321 695 CA 258</b></p>
+<form action="/reg_numbers" method="POST">
+
+<strong>Registration Number: </strong>
+
+		<input type="text" name="regNumberEntered" class="regNumberEntered" placeholder="enter a registration number">
+		<button class="addRegNumber btn blue" button type="submit">Add</button>
+		
+</form>
+		</div>
+		
+	<div class="radio">
+<form action="/reg_numbers" method="GET">
+			<strong>Filter by town</strong>
+
+			<input type="radio" name="town" value="select all">Show all
+			<input type="radio" name="town" value="CJ">Paarl
+			<input type="radio" name="town" value="CK">Malmesbury
+			<input type="radio" name="town" value="CA"> Cape Town
+			
+<a href="/filter"><button class="filter button" type="submit" name="button">Filter</button></a>
+</form>
+
+<br>
+   <a href="/reset"> <button type="submit" class="reset button">Reset</button></a>
+
+		</div>
+		<br>
+		<hr>
+	
+    <div class="correct">
+        </p>{{messages.success}}</p>
+    </div>
+
+<div class="row">
+	
+		{{#each plate}}
+		<ul class="reg">
+		{{this.reg}}
+		</ul>
+		{{/each}}
+		</div>
+</div>
+
+</div>
+
+<script>
+    setTimeout(function () {
+        document.querySelector(".info").innerHTML = "";
+        document.querySelector(".correct").innerHTML = "";
+    }, 2000);
+</script>
+
+
+
