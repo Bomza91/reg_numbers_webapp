@@ -46,7 +46,7 @@ describe('Stored registrarion numbers', function () {
     assert.deepEqual [{'reg':'CA 874-356'}, {'reg':'CJ 123-458'}]
   });
 
-  it('should display one registration no. if the user enter the same registration number and increment it om the database  ', async function () {
+  it('should display one registration no. if the user enter the same registration number and increment it on the database  ', async function () {
     let regInstance = regFactory(pool);
     await regInstance.checkingReg('CA 874-356');
     await regInstance.checkingReg('CA 874-356');
