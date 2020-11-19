@@ -46,9 +46,13 @@ module.exports = function route(regInstance){
         let area = req.query.town
         console.log(area);
     
-        if (!area) {
+        if (area === undefined) {
             req.flash('info', 'Please select a town');
-        } else {
+            res.render('index')
+            return;
+        } 
+        
+        else {
             const filtering = await regInstance.showFilter(area)
     
             res.render('index', {

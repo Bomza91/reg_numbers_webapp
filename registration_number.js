@@ -55,6 +55,7 @@ module.exports = function regFactory(pool) {
 
 
   async function showFilter(code) {
+    
     if (code === "select all") {
       var filtering = await pool.query('select reg , townsId from regNumbers');
       return filtering.rows;
