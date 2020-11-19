@@ -32,6 +32,12 @@ describe('The Add function for Registration Numbers', function () {
     await regInstance.checkingReg("CK 123-321");
     assert.deepEqual[{'reg':"CK 123-321"}]
    });
+
+   it('should be able display registartion numbers from Paarl ', async function () {
+    const regInstance = regFactory(pool);
+    await regInstance.checkingReg("CJ 123-321");
+    assert.deepEqual[{'reg':"CJ 123-321"}]
+   });
  
 });
 
