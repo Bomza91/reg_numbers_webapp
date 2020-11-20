@@ -44,8 +44,7 @@ module.exports = function route(regInstance){
     async function filterBy(req, res) {
 
         let area = req.query.town
-        console.log(area);
-    
+       
         if (area === undefined) {
             req.flash('info', 'Please select a town');
             res.render('index')
@@ -67,8 +66,6 @@ module.exports = function route(regInstance){
         res.render('index');
     };
     
-
-
     return{
     home, 
     post,
